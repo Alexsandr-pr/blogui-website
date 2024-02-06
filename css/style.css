@@ -531,49 +531,6 @@
   display: flex;
 }
 
-.social__image a {
-  text-decoration: none;
-}
-
-.social__image .fa-brands {
-  font-size: 20px;
-  color: #222;
-}
-
-.social__image a::before {
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 20px;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.social__image:nth-child(1) a::before {
-  content: "\f099";
-  color: #00acee;
-  border-bottom: 2px solid #00acee;
-}
-
-.social__image:nth-child(2) a::before {
-  content: "\f2c6";
-  color: #0088cc;
-  border-bottom: 2px solid #0088cc;
-}
-
-.social__image:nth-child(3) a::before {
-  content: "\f08c";
-  color: #0e76a8;
-  border-bottom: 2px solid #0e76a8;
-}
-
-.social__image:hover a::before {
-  height: 100%;
-}
-
 .text-anim._start-anim .splitting .char {
   -webkit-animation: slide-in 0.35s cubic-bezier(0.5, 0, 0.5, 1) both;
           animation: slide-in 0.35s cubic-bezier(0.5, 0, 0.5, 1) both;
@@ -638,7 +595,6 @@
 }
 
 #canvas {
-  z-index: 2;
   position: fixed;
   left: 0;
   top: 0;
@@ -2391,14 +2347,15 @@ button {
 }
 
 .filter__trigger {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  position: relative;
+  z-index: 5;
   background-color: #141414;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   text-align: center;
   padding: 10px 10px;
   border-radius: 7px;
   border: 1px solid #262626;
-  transition: all 0.3s ease 0s;
 }
 
 .filter__trigger._active {
@@ -4692,9 +4649,6 @@ button {
 
   .filter__trigger {
     width: 150px;
-  }
-
-  .filter__trigger {
     min-height: 57px !important;
   }
 
@@ -5421,14 +5375,8 @@ button {
 
   .filter__trigger:hover {
     cursor: pointer;
-    background: #1A1A1A;
+    background-color: #1A1A1A;
     color: #fff;
-  }
-
-  .filter__trigger:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 3px 3px 4px rgba(255, 209, 26, 0.5);
-            box-shadow: 3px 3px 4px rgba(255, 209, 26, 0.5);
   }
 
   .data__item:hover {
