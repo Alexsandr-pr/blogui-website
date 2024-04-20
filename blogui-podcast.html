@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240206215859">
+	<meta name="description" content="Blog ui website">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240420231903">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240206215859">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240420231903">
+
 	<title>Podcast</title>
 </head>
 	<body>
@@ -32,14 +34,13 @@
                     <picture>
                         <source media="(min-width:1300px )" srcset="img/icon/logo/logo-large.png" type="image/png">
                         <source media="(min-width:991.98px )" srcset="img/icon/logo/logo-small.png" type="image/png">
-                        <source media="(max-width:991.98px )" srcset="img/icon/logo/logo-mobile.png" type="image/png">
-                        <img src="img/icon/logo/logo-large.png" alt="Logo">
+                        <img src="img/icon/logo/logo-mobile.png" alt="Logo">
                     </picture>
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href='blogui-index.html' class="menu__link _active">Home</a>
+                            <a href='index.html' class="menu__link _active">Home</a>
                         </li>
                         <li class="menu__item">
                             <a href='blogui-news.html' class="menu__link">News</a>
@@ -59,7 +60,7 @@
                 <a href="blogui-contact.html" id="contact-button" class="button-orange">
                     Contact Us
                 </a>
-                <button class="icon-menu">
+                <button class="icon-menu" aria-label="menu">
                     <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                         <path
                             class="line top"
@@ -100,7 +101,7 @@
 							<div class="main-future__item item-action">
 								<div class="item-action__body">
 									<div class="item-action__image _anim-items no-repeat-anim">
-										<picture><source srcset="img/action/al-revolution.webp" type="image/webp"><img src="img/action/al-revolution.png" alt="image"></picture>
+										<picture><source srcset="img/action/al-revolution.webp" type="image/webp"><img width="80" height="80" src="img/action/al-revolution.png" alt="image"></picture>
 									</div>
                                     <div class="item-action__title-block title-block">
                                         <div class="item-action__title title-40 text-anim _anim-items">
@@ -171,7 +172,7 @@
                             <div class="main-future__item item-action">
 								<div class="item-action__body">
 									<div class="item-action__image _anim-items no-repeat-anim">
-										<picture><source srcset="img/action/al-convers.webp" type="image/webp"><img src="img/action/al-convers.png" alt="image"></picture>
+										<picture><source srcset="img/action/al-convers.webp" type="image/webp"><img width="80" height="80"  src="img/action/al-convers.png" alt="image"></picture>
 									</div>
                                     <div class="item-action__title-block title-block">
                                         <div class="item-action__title title-40 text-anim _anim-items">
@@ -262,7 +263,7 @@
                         <div class="main-latest__items">
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image1.webp" type="image/webp"><img src="img/podcast/image1.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image1.webp" type="image/webp"><img src="img/podcast/image1.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">AI in Healthcare</h3>
@@ -282,7 +283,7 @@
                             </article>
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image2.webp" type="image/webp"><img src="img/podcast/image2.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image2.webp" type="image/webp"><img src="img/podcast/image2.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">AI Ethics</h3>
@@ -302,7 +303,7 @@
                             </article>
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image3.webp" type="image/webp"><img src="img/podcast/image3.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image3.webp" type="image/webp"><img src="img/podcast/image3.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">Machine Learning Explained</h3>
@@ -322,7 +323,7 @@
                             </article>
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image4.webp" type="image/webp"><img src="img/podcast/image4.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image4.webp" type="image/webp"><img src="img/podcast/image4.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">AI and the Future of Work</h3>
@@ -342,7 +343,7 @@
                             </article>
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image5.webp" type="image/webp"><img src="img/podcast/image5.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image5.webp" type="image/webp"><img src="img/podcast/image5.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">AI in Education</h3>
@@ -362,7 +363,7 @@
                             </article>
                             <article class="main-latest__item item-video">
                                 <a href="#" class="item-video__iframe">
-                                    <picture><source srcset="img/podcast/image6.webp" type="image/webp"><img src="img/podcast/image6.png" alt="image"></picture>
+                                    <picture><source srcset="img/podcast/image6.webp" type="image/webp"><img src="img/podcast/image6.webp" alt="image"></picture>
                                 </a>
                                 <a href="#" class="item-video__title text-anim _anim-items">
                                     <h3 data-splitting="chars">AI in Entertainment</h3>
@@ -389,21 +390,19 @@
 						<div class="main-logo__body"> 
 							<div class="main-logo__image image-des">
 								<picture>
-									<source media="(min-width:1300px )" srcset="img/logo/logo-large.png" type="image/png">
-									<source media="(min-width:700.98px )" srcset="img/logo/logo-smal.png" type="image/png">
-									<source media="(max-width:700.98px )" srcset="img/logo/logo-mobile.png" type="image/png">
-									<img src="img/logo/logo-large.png" alt="Logo">
+									<source media="(min-width:1300px )" srcset="img/logo/logo-large.webp" type="image/webp">
+									<source media="(min-width:700.98px )" srcset="img/logo/logo-smal.webp" type="image/webp">
+									<img src="img/logo/logo-mobile.webp" alt="Logo">
 								</picture>
 							</div>
 							<div class='main-logo__header-item header-item'>
 								<div class="header-item__block">
 									<div class="main-logo__image image-mobile">
 										<picture>
-											<source media="(min-width:1300px )" srcset="img/logo/logo-large.png" type="image/png">
-											<source media="(min-width:700.98px )" srcset="img/logo/logo-smal.png" type="image/png">
-											<source media="(max-width:700.98px )" srcset="img/logo/logo-mobile.png" type="image/png">
-											<img src="img/logo/logo-large.png" alt="Logo">
-										</picture>
+                                            <source media="(min-width:1300px )" srcset="img/logo/logo-large.webp" type="image/webp">
+                                            <source media="(min-width:700.98px )" srcset="img/logo/logo-smal.webp" type="image/webp">
+                                            <img src="img/logo/logo-mobile.webp" alt="Logo">
+                                        </picture>
 									</div>
 									<div class='header-item__label _anim-items text-anim'>
 										<p data-splitting="chars">Learn, Connect, and Innovate</p>
@@ -485,7 +484,7 @@
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Features</a>
+                            <a href="/" class="footer__link">Features</a>
                         </li>
                         <li class="footer__item">
                             <a href="blogui-blog.html" class="footer__link">Blogs</a>
@@ -494,13 +493,13 @@
                             <a href="blogui-resourse.html" class="footer__link">Resources <span>New</span></a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Testimonials</a>
+                            <a href="/" class="footer__link">Testimonials</a>
                         </li>
                         <li class="footer__item">
                             <a href="blogui-contact.html" class="footer__link">Contact Us</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Newsletter</a>
+                            <a href="/" class="footer__link">Newsletter</a>
                         </li>
                     </ul>
                 </nav>
@@ -511,22 +510,22 @@
                 </div>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Trending Stories</a>
+                        <a href="/" class="footer__link">Trending Stories</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Featured Videos</a>
+                        <a href="/" class="footer__link">Featured Videos</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Technology</a>
+                        <a href="/" class="footer__link">Technology</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Health</a>
+                        <a href="/" class="footer__link">Health</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Politics</a>
+                        <a href="/" class="footer__link">Politics</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Environment</a>
+                        <a href="/" class="footer__link">Environment</a>
                     </li>
                 </ul>
             </div>
@@ -536,22 +535,22 @@
                 </div>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Quantum Computing</a>
+                        <a href="/" class="footer__link">Quantum Computing</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">AI Ethics</a>
+                        <a href="/" class="footer__link">AI Ethics</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Space Exploration</a>
+                        <a href="/" class="footer__link">Space Exploration</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Biotechnology <span>New</span></a>
+                        <a href="/" class="footer__link">Biotechnology <span>New</span></a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Renewable Energy</a>
+                        <a href="/" class="footer__link">Renewable Energy</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Biohacking</a>
+                        <a href="/" class="footer__link">Biohacking</a>
                     </li>
                 </ul>
             </div>
@@ -561,16 +560,16 @@
                 </div>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a href="#" class="footer__link">AI Revolution</a>
+                        <a href="/" class="footer__link">AI Revolution</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">AI Revolution</a>
+                        <a href="/" class="footer__link">AI Revolution</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">TechTalk AI</a>
+                        <a href="/" class="footer__link">TechTalk AI</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">AI Conversations <span>new</span></a>
+                        <a href="/" class="footer__link">AI Conversations <span>new</span></a>
                     </li>
                 </ul>
             </div>
@@ -580,7 +579,7 @@
                 </div>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a href="#" class="button-opacity button">
+                        <a href="/" class="button-opacity button">
                             <span class=" button-opacity__text button-text">Whitepapers</span>
                             <span class="button-opacity__image button-text">
                                 <i class="fa-solid fa-arrow-up"></i>
@@ -589,7 +588,7 @@
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="button-opacity button">
+                        <a href="/" class="button-opacity button">
                             <span class=" button-opacity__text button-text">Ebooks</span>
                             <span class="button-opacity__image button-text">
                                 <i class="fa-solid fa-arrow-up"></i>
@@ -598,17 +597,16 @@
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="button-opacity button">
+                        <a href="/" class="button-opacity button">
                             <span class=" button-opacity__text button-text">Reports</span>
                             <span class="button-opacity__image button-text">
                                 <i class="fa-solid fa-arrow-up"></i>
                             </span>
                             <div class="fill-container"></div>
-
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="button-opacity button">
+                        <a href="/" class="button-opacity button">
                             <span class=" button-opacity__text button-text">Research Papers</span>
                             <span class="button-opacity__image button-text">
                                 <i class="fa-solid fa-arrow-up"></i>
@@ -622,17 +620,17 @@
         
         <div class="footer__bottom">
             <div class="footer__politic">
-                <p>Terms & Conditions</p> | <p><a href="#">Privacy Policy</a></p>
+                <p>Terms & Conditions</p> | <p><a href="/">Privacy Policy</a></p>
             </div>
             <ul class="footer__social social">
                 <li class="social__image">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li class="social__image">
-                    <a href="#">  <i class="fa-brands fa-telegram"></i></a>
+                    <a href="/">  <i class="fa-brands fa-telegram"></i></a>
                 </li>
                 <li class="social__image">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
             </ul>
             <div class="footer__tech">
@@ -642,7 +640,7 @@
     </div>
 </footer>
 		</div>
-        <script src="https://kit.fontawesome.com/bc2d359d6d.js?_v=20240206215859" crossorigin="anonymous"></script>
-		<script src="js/app.min.js?_v=20240206215859"></script>
+        <script src="https://kit.fontawesome.com/bc2d359d6d.js?_v=20240420231903" crossorigin="anonymous"></script>
+		<script src="js/app.min.js?_v=20240420231903"></script>
 	</body>
 </html>

@@ -1778,8 +1778,6 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  -webkit-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
 }
 
 .person__title {
@@ -2044,6 +2042,8 @@ button {
 }
 
 .users__item img {
+  outline: #7E7E81 1px solid;
+  border-radius: 50%;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
   max-width: 100%;
@@ -2413,11 +2413,16 @@ button {
 
 .item-event .person__image {
   width: 80px;
+  border-radius: 50%;
   height: 80px;
+  overflow: hidden;
 }
 
 .item-event .person__image img {
-  width: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  outline: #7E7E81 1px solid;
 }
 
 .item-event .item-event__person {
@@ -3357,9 +3362,9 @@ button {
     margin-bottom: 20px;
   }
 
-  .users__item {
-    width: 50px;
-    height: 50px;
+  .users__item img {
+    width: 50px !important;
+    height: 50px !important;
   }
 
   .title-24 {
@@ -3483,8 +3488,14 @@ button {
   }
 
   .item-event .person__image {
-    width: 60px;
-    height: 60px;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .item-event .person__image img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
   }
 
   .item-event .item-event__person {
@@ -4568,9 +4579,9 @@ button {
     margin-bottom: 4px;
   }
 
-  .users__item {
-    width: 40px;
-    height: 40px;
+  .users__item img {
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .title-24 {
@@ -5300,11 +5311,6 @@ button {
     cursor: pointer;
     -webkit-box-shadow: 3px 3px 4px rgba(255, 209, 26, 0.5);
             box-shadow: 3px 3px 4px rgba(255, 209, 26, 0.5);
-  }
-
-  .person__image:hover {
-    cursor: pointer;
-    scale: 2;
   }
 
   .item-go__item:hover {
